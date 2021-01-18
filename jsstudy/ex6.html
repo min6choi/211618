@@ -7,12 +7,18 @@
 </head>
 <body>
     <h1>Loop & Array</h1>
+    <script>
+        var coworkers = ['puppy', 'me', 'ice', 'mint']
+    </script>
     <h2>Co workers</h2>
     <ul>
-        <li>upbringing</li>
-        <li>example</li>
-        <li>ice</li>
-        <li>mint</li>
+        <script>
+            var i = 0;
+            while(i < coworkers.length){
+            document.write('<li><a href="http://google.com'+coworkers[i]+'">'+coworkers[i]+'</li>');
+            i = i + 1;
+            }
+        </script>
     </ul>
 </body>
 </html>
