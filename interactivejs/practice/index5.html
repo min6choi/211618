@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+    </head>
+    <body>
+        <script>
+            function setup() {
+                createCanvas(windowWidth, windowHeight);
+                background(220);
+            }
+
+            function draw() {
+                console.log('mouseIsPressed', mouseIsPressed);/*mousepress is true if not, false*/
+                //if(mouseIsPressed){
+                //  background(random(250), random(255), random(255));/*background colors change randomly*/
+                //}
+                circle(mouseX+random(-10, 10), mouseY+random(-10, 10), random(50));
+            }
+
+            function mousePressed(){
+                background(random(250), random(255), random(255));/*chage when check*/
+            }
+        </script>
+    </body>
+</html>
