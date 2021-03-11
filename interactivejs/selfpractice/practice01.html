@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+    </head>
+    <body>
+        <script>
+            function setup(){
+                createCanvas(windowWidth, windowHeight);
+                background(200);
+            }
+
+            function draw() {
+                translate(width / 2, height / 2);
+
+                let v = createVector(random(-100, 100), random(-100, 100));
+
+                strokeWeight(2);
+                stroke(32, 178, 170);
+                line(0,0,v.x, v.y);
+            }
+        </script>
+    </body>
+</html>
