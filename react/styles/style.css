@@ -1,0 +1,16 @@
+header {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  color: #3d3c3c;
+}
+header button {
+  background: #2fbe9b;
+}
+header button::after {
+  content: "Hello";
+}
+
+.contact button {
+  background: #2fbe9b;
+}/*# sourceMappingURL=style.css.map */
