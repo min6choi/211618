@@ -1,6 +1,6 @@
 :root {
-    --primary: #ffce00;
-    --secondary: #fe4880;
+    --primary: #0fbd88;
+    --secondary: #f3d31d;
     --dark: #212121;
     --light: #f3f3f3;
 }
@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     min-height: 100vh;
 }
@@ -20,6 +20,7 @@ body {
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
+    perspective: 1000px;
 }
 
 .card__inner {
@@ -27,6 +28,7 @@ body {
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
+    /*마우스 클릭 아이콘으로 변경*/
     cursor: pointer;
     position: relative;
 }
@@ -42,7 +44,8 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
-    border-radius: 16;
+    /*테두리 둥글게*/
+    border-radius: 16px;
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2)
 }
 
@@ -75,6 +78,7 @@ body {
 }
 
 .card__header:after {
+    /*컨텐츠가 없다는 말*/
     content: '';
     display: block;
     position: absolute;
@@ -84,6 +88,49 @@ body {
     bottom: 0;
     z-index: -1;
     border-radius: 0 0 50% 0;
-    background-image: linear-gradient(to bottom left, var(--primary) 10%, var
-    (var(--secondary) 115%));
+    /*이게 바로 그 그라데이션*/
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, 
+    var(--secondary) 110%);
+}
+
+.pp {
+    display: block;
+    /*이미지 크기 조절*/
+    width: 128px;
+    height: 128px;
+    /*이미지 위치 조절*/
+    margin: 0 auto 30px;
+    /*원형으로 이미지 만들기*/
+    border-radius: 50%;
+    background-color: #fff;
+    /*이미지 테두리 크기*/
+    border: 5px solid #fff;
+     /*이미지를 크기에 맞게 조절해줌*/
+    object-fit: cover;   
+}
+
+.card__header h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__body {
+    /*중앙정렬*/
+    padding: 30px;   
+}
+
+.card__body h3 {
+    color: var(--dark);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body p {
+    color: var(--dark);
+    font-size: 11px;
+    line-height: 1.7;
 }
