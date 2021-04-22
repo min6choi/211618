@@ -88,7 +88,7 @@ body {
     bottom: 0;
     z-index: -1;
     border-radius: 0 0 50% 0;
-    /*이게 바로 그 그라데이션*/
+    /*그라데이션*/
     background-image: linear-gradient(to bottom left, var(--primary) 10%, 
     var(--secondary) 110%);
 }
