@@ -21,7 +21,7 @@ nav ul,
 }
 
 body {
-    background-color: #e8e9c0;
+    background-color: #e0ae41;
 }
 
 header {
@@ -69,9 +69,9 @@ a {
 }
 
 .text h1 {
-    color: rgb(166, 192, 17);
+    color: rgb(232, 235, 219);
     font-size: 3rem;
-    cursor: context-menu;
+    cursor: default;
 }
 
 .text span {
@@ -79,12 +79,12 @@ a {
 }
 
 span:hover {
-    color: #0d56c5;
+    color: #08bba3;
     transition: all .5s;
 }
 
 span.name {
-    color: #ed5565;
+    color: #08bba3;
 }
 
 span.m-left {
