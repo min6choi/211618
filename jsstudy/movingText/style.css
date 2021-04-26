@@ -71,6 +71,7 @@ a {
 .text h1 {
     color: rgb(232, 235, 219);
     font-size: 3rem;
+    /*마우스 커서 이미지 변경*/
     cursor: default;
 }
 
@@ -91,10 +92,5 @@ span.m-left {
     margin-left: -10px;
 }
 
-.text p {
-    letter-spacing: 3px;
-    word-spacing: 10px;
-    font-size: 10px;
-}
 
 
