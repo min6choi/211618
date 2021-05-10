@@ -1,8 +1,4 @@
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-}
+
 
 :root {
 	font-size: 15px;
