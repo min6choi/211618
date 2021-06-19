@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    body { box-sizing: border-box; margin: 0px; }
+    .jb { height: 200px; padding: 20px; text-align: center; color: #ffffff; opacity: 0; }
+    .jb-1 { background-color: #333333; }
+  </style>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $( document ).ready( function() {
+      $( '.jb-1' ).animate( {
+        opacity: '1'
+      }, 1000 );
+    } );
+  </script>
+</head>
+<body>
+  <div class="jb jb-1">Hello!</div>
+</body>
+</html>
